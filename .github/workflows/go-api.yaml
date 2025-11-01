@@ -10,9 +10,6 @@ on:
 jobs:
     build: 
         runs-on: ubuntu-latest
-        defaults:
-          run:
-            working-directory: ./go-api
         steps:
           - name: Go Versiom
             run: go version
@@ -26,6 +23,8 @@ jobs:
 
           - name: Build Go API
             run: go build -v ./...
+            working-directory: ./go-api
 
           - name: Run tests
             run: go test -v ./...
+            working-directory: ./go-api
