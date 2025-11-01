@@ -1,0 +1,6 @@
+# Binaries
+server
+*.exe
+
+# Editor files
+.vscode/
