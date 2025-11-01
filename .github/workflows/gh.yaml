@@ -1,0 +1,22 @@
+name: gh
+on: 
+    push:
+        branches:
+        - main
+        paths:
+        - '.github/workflows/gh.yaml'
+    workflow_dispatch:
+jobs:
+    cli:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v4
+
+          - run: gh --version
+          - run: gh auth status
+          - run: gh repo list
+          - run: gh issue list
+          - run: gh workflow list
+          - run: gh api /repos/:owner/:repo/issues
+          
