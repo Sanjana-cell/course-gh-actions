@@ -12,6 +12,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         steps:
+          - run: env
           - name: Checkout code
             uses: actions/checkout@v4
           - run: gh --version
