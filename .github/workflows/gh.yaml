@@ -16,7 +16,6 @@ jobs:
           - name: Checkout code
             uses: actions/checkout@v4
           - run: gh --version
-          - run: gh auth login 
           - run: gh auth status
           - run: gh repo list
           - run: gh issue list
