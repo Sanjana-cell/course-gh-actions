@@ -26,3 +26,6 @@ Endpoints:
 - GET / -> {"message": "Hello, world"}
 - GET /health -> {"status": "ok"}
 - GET /items/{item_id}?q=... -> {"item_id": <int>, "q": <str|null>}
+
+
+
