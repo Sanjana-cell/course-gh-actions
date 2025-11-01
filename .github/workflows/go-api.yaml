@@ -10,10 +10,10 @@ on:
 
 jobs:
     build: 
-        runs-on: ubuntu-latest
+        runs-on: macos-latest
         steps:
-          - name: Go Versiom
-            run: go version
+        #   - name: Go Versiom
+        #     run: go version
           - name: Checkout code
             uses: actions/checkout@v3
 
